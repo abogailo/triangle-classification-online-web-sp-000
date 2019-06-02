@@ -25,7 +25,7 @@ class Triangle
         :scalene
       end
     end
-    
+
     class TriangleError < RangeError
     end
 
