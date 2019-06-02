@@ -1,4 +1,4 @@
-class Triangle
+class Triangle < StandardError
   # write code here
   attr_accessor :length1, :length2, :length3
 
