@@ -1,6 +1,3 @@
-class TriangleError < RangeError
-
-end
 
 class Triangle
   # write code here
@@ -28,4 +25,8 @@ class Triangle
         :scalene
       end
     end
+    class TriangleError < RangeError
+
+    end
+
 end
