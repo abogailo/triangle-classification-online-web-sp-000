@@ -1,4 +1,4 @@
-class TriangleError < StandardError
+class TriangleError < RangeError
 
 end
 
