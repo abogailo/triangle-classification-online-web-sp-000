@@ -1,31 +1,28 @@
 class TriangleError < StandardError
-
 end
 
-class Triangle
-  # write code here
-  attr_accessor :length1, :length2, :length3
+ class Triangle	class Triangle
+  # write code here	  # write code here
+end 	
+   attr_accessor :a, :b, :c
 
-  def initialize(length1, length2, length3)
-    @length1 = length1
-    @length2 = length2
-    @length3 = length3
+   def initialize(a, b, c)
+    @a, @b, @c = a, b, c
   end
 
-    def kind
-      low, mid, max = [@length1, @length2, @length3].sort
-      if  low + mid = max
-        raise TriangleError
-      elsif low == 0 || mid == 0 || max == 0
-        raise TriangleError
-      end
-
-      if @length1 == @length2 && @length2 == length3
-        :equilateral
-      elsif @length1 == @length2 || @length1 == @length3 || @length2 == @length3
-        :isosceles
-      else
-        :scalene
-      end
+   def kind
+    min, min2, max = [@a, @b, @c].sort
+    if @a < 0 || @b < 0 || @c < 0 || min + min2 <= max
+      raise TriangleError
     end
-end
+
+     if @a == @b && @b == c
+      :equilateral
+    elsif @a == @b || @a == @c || @b == @c
+      :isosceles
+    else
+      :scalene
+    end
+  end
+
+ end
