@@ -3,7 +3,7 @@ end
 
  class Triangle	class Triangle
   # write code here	  # write code here
-end 	
+end
    attr_accessor :a, :b, :c
 
    def initialize(a, b, c)
